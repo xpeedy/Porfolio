@@ -6,6 +6,7 @@ const NavBar = () => {
     
     return(
         <Sdiv>
+            <div className="nav-container">
             <img className="profile-pic" src="https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" alt="profile"/>
             <Nav className="nav-bar">
             <Link className="nav-link" to="/">Home</Link>
@@ -13,6 +14,7 @@ const NavBar = () => {
             <Link className="nav-link" to="/projects">Projects</Link>
             <Link className="nav-link" to="/contact">Contact Me</Link>
             </Nav>
+            </div>
         </Sdiv>
     )
 }
@@ -22,8 +24,13 @@ export default NavBar;
 const Sdiv = Styled.div`
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1%;
-    border: solid black;
+    border: solid white;
+    .nav-container {
+        display: flex;
+        width: 60%;
+        border:solid white;
+        margin-top: 1%;
+    }
     .profile-pic {
         border-radius:50%;
         //border: solid red;
@@ -34,11 +41,11 @@ const Sdiv = Styled.div`
 const Nav = Styled.nav`
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    width: 100%;
     padding: 0%;
     margin-left: 10%;
     margin-right: -3%;
-    //border: solid black;
+    border: solid white;
     .nav-link {
         text-decoration: none;
         font-size: 170%;
