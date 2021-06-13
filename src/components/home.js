@@ -38,7 +38,7 @@ flex-wrap: wrap;
 .top {
     margin-top: 1%;
     display: flex;
-    border: solid red;
+    //border: solid red;
 }
 
 .name {
@@ -50,7 +50,7 @@ flex-wrap: wrap;
     width: 70%;
     height: 85%;
     margin: 3% 0% 0% 5%;
-    border: solid white;;
+    //border: solid white;;
 }
 
 .links {
@@ -58,14 +58,15 @@ flex-wrap: wrap;
     height:17%;
     width: 15%;
     color: white;
-    border: solid white;;
+    //border: solid white;;
 }
 
 .som {
     display: flex;
     color: white;
-    border: solid white;;
-    margin: 3% 0% -3% 45%;
+    font-size: 2.5rem;
+    //border: solid white;;
+    margin: 10% 0% 0% 42%;
 }
 
 .my-work {

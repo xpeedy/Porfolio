@@ -7,12 +7,12 @@ const NavBar = () => {
     return(
         <Sdiv>
             <div className="nav-container">
-            <img className="profile-pic" src="https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" alt="profile"/>
+            <img className="profile-pic" src="./mypic.jpg" alt="profile"/>
             <Nav className="nav-bar">
-            <Link className="nav-link" to="/">Home</Link>
-            <Link className="nav-link" to="/about">About</Link>
-            <Link className="nav-link" to="/projects">Projects</Link>
-            <Link className="nav-link" to="/contact">Contact Me</Link>
+                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/projects">Projects</Link>
+                <Link className="nav-link" to="/contact">Contact Me</Link>
             </Nav>
             </div>
         </Sdiv>
@@ -24,33 +24,31 @@ export default NavBar;
 const Sdiv = Styled.div`
     display: flex;
     justify-content: space-evenly;
-    border: solid white;
+    //border: solid white;
     .nav-container {
         display: flex;
-        width: 60%;
-        border:solid white;
+        width: 83%;
+        //border:solid red;
         margin-top: 1%;
     }
     .profile-pic {
         border-radius:50%;
-        //border: solid red;
-        width: 3%;
-        //margin-right: 0%;
+        width: 4%;
     }
 `
 const Nav = Styled.nav`
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 40%;
     padding: 0%;
-    margin-left: 10%;
-    margin-right: -3%;
-    border: solid white;
+    margin-left: 60%;
+    //border: solid white;
     .nav-link {
+        display: flex;
         text-decoration: none;
         font-size: 170%;
+        color: white;
         //border: solid red;
-        margin-right:-30%;
         align-self: center;
     }
 `;
