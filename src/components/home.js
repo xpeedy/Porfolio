@@ -44,21 +44,26 @@ flex-wrap: wrap;
 .name {
     display: flex;
     justify-content: right;
-    text-align: center;
-    font-size: 16rem;
+    text-align: start;
+    font-size: 14rem;
     color: white;
     width: 70%;
-    height: 85%;
-    margin: 3% 0% 0% 5%;
+    height: 88%;
+    line-height: 1.1;
+    margin: 3% 0% 0% 11%;
     //border: solid white;;
 }
 
 .links {
-    margin-top: 29.4%;
+    text-align: start;
+    font-size: 1.5rem;
+    margin-top: 26.8%;
     height:17%;
     width: 15%;
-    color: white;
     //border: solid white;;
+}
+h3 {
+    color: white;
 }
 
 .som {
