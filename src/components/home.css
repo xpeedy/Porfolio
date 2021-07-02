@@ -1,0 +1,124 @@
+
+@keyframes slide-top {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-40px);
+    }
+  }
+  
+  
+
+.home {
+    display: flex;
+flex-wrap: wrap;
+}
+
+.top {
+    margin-top: 1%;
+    display: flex;
+    width: 100%;
+    /* border: solid red; */
+}
+
+.name {
+    display: flex;
+    justify-content: right;
+    text-align: start;
+    font-size: 14rem;
+    color: white;
+    width: 70%;
+    height: 88%;
+    line-height: 1.1;
+    margin: 5% 0% 0% 8.5%;
+    /* border: solid white;; */
+}
+
+.links {
+    text-align: end;
+    font-size: 1.2rem;
+    margin: 26.8% 0% 0 -4.5%;
+    height:17%;
+    width: 15%;
+    /* border: solid white;; */
+}
+
+/* a {
+    
+    width: 5%;
+    height: 70px;
+    margin: 7% 0 0 50%;
+    opacity: .3;
+    
+} */
+
+.btn-home {
+    /* border: solid red; */
+    border-radius: 10px;
+    background-color: rgb(43, 41, 54);;
+    /* width: 100%; */
+    padding: .5%;
+    font-size: 2rem;
+    color: rgb(117, 117, 129);
+    text-decoration: none;
+    margin: 7% 0 0 46%;
+    animation: bounce-top 1.5s both;
+    
+}
+
+.btn-home:hover {
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.som {
+    display: flex;
+    color: white;
+    font-size: 2.5rem;
+    /* border: solid white;; */
+    margin: 10% 0% 0% 42%;
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}

@@ -1,27 +1,29 @@
 
-export const projectsData = [{
-    pro1: {
+const projectsData = [
+    {
         id:1,
-        pic:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+        picture:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
         name:"project one",
-        desc:""
+        description:"im first"
     },
-    pro2: {
+    {
         id:2,
-        pic:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+        picture:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
         name:"project two",
-        desc:""
+        description:"im second"
     },
-    pro3: {
+    {
         id:3,
-        pic:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+        picture:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
         name:"project three",
-        desc:"",
+        description:"im third",
     },
-    pro4: {
+    {
         id:4,
-        pic:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+        picture:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
         name:"project four",
-        desc:"",
+        description:"im fourth",
     }
-}]
+]
+
+export default projectsData
