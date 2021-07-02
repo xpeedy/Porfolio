@@ -1,4 +1,4 @@
-import Styled from "styled-components";
+import "./App.css"
 import { Route } from "react-router-dom"
 import Home from "./components/home";
 import About from "./components/about"
@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <StyledDiv className="App">
+    <div className="App">
       <NavBar />
       <Route exact path="/">
       <Home />
@@ -19,13 +19,14 @@ function App() {
       <Route path="/projects">
         <Projects />
       </Route>
+      {/* <SocialFollow /> */}
       <Footer />
-    </StyledDiv>
+    </div>
   );
 }
 
 export default App;
 
-const StyledDiv = Styled.div`
-background-image: url("./feather.jpg");
-`
+// const StyledDiv = Styled.div`
+// background-image: url("./feather.jpg");
+// `

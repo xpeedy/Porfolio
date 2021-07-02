@@ -1,13 +1,24 @@
 import React from "react";
-
+import "./projects.css"
+import Cards from "./Card";
+import projectsData from "../assets/projectsData";
 
 const Projects = () => {
 
     return(
-        <div>
-            <h1>My Work</h1>
-            <p>sdasf  asdfsfas asdfasd</p>
-        </div>
+        <>
+        <h1>My Work</h1>
+        <div className="projects-container">
+            {projectsData.map(project => (
+                <Cards 
+                key={project.id}
+                name={project.name}
+                picture={project.picture}
+                description={project.description}
+                />
+            ))}
+        </div> 
+        </>
     )
 }
 

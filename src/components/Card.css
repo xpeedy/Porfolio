@@ -1,0 +1,13 @@
+@import '~antd/dist/antd.css';
+
+/* .card-cointainer {
+    border: solid red;
+    padding: 10%;
+} */
+
+.project-card {
+    /* border: solid red; */
+    margin: 10%;
+    width: 60%;
+}
+
