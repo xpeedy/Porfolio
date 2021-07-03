@@ -2,13 +2,13 @@
 const projectsData = [
     {
         id:1,
-        picture:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-        name:"project one",
-        description:"im first"
+        picture:"Blue-Witness.png",
+        name:"Blue Witness",
+        description:"Humans Rights First"
     },
     {
         id:2,
-        picture:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+        picture:"Water-my-plants.png",
         name:"project two",
         description:"im second"
     },

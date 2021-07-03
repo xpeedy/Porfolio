@@ -21,7 +21,7 @@
     height: 300px;
     margin: 4% 0% 0% 8.5%;
     animation: slide-in-left 3s both;
-    text-shadow: 10px 10px 18px black;
+    text-shadow: 10px 10px 20px black;
 }
 
 .role {
@@ -34,27 +34,42 @@
     height: 200px;
     margin: 0% 0% 0% 9%;
     animation: slide-in-left 4s both;
-    text-shadow: 10px 10px 18px black;
+    text-shadow: 6px 6px 6px black;
 }
 
 .links {
     text-align: end;
+    color: white;
     font-size: 1.2rem;
+    font-weight: normal;
     margin: 7.5% 0% 0 -5%;
     height:17%;
     width: 15%;
+    text-shadow: 4px 4px 3px black;
 }
 
-.links h3:nth-child(1) {
+.linkedin p {
     animation: slide-in-right 4.5s both;
+    width: 35%;
+    margin-left: 65%;
+    color: white;
+    text-align: center;
 }
 
-.links h3:nth-child(2) {
+.Github p {
     animation: slide-in-right 5s both;
+    width: 35%;
+    margin-left: 65%;
+    color: white;
+    text-align: center;
 }
 
-.links h3:nth-child(3) {
+.resume p {
     animation: slide-in-right 5.5s both;
+    width: 35%;
+    margin-left: 65%;
+    color: white;
+    text-align: center;
 }
 
 .btn-home {
@@ -73,6 +88,16 @@
     animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     color: white;
 }
+
+.hidden {
+  display:none;
+ }
+ .btn-home:hover span.visible{
+  display:none;
+ }
+ .btn-home:hover span.hidden{
+  display:block;
+ }
 
 h3 {
     color: white;

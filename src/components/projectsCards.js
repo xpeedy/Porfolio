@@ -20,7 +20,7 @@ const ProjectsCards = () => {
                 </div>
             </div>
             <div className="project-2">
-                <img className="project-img-2" src={projectsData[1].name}></img>
+                <img className="project-img-2" src={projectsData[1].picture}></img>
                 <div className="project-info-2">
                 <h2 className="title-project-2">{projectsData[1].name}</h2>
                 <h3 className="description-project-2">descripton</h3>
@@ -28,7 +28,7 @@ const ProjectsCards = () => {
                 </div>
             </div>
             <div className="project-3">
-                <img className="project-img-3" src={projectsData[2].name}></img>
+                <img className="project-img-3" src={projectsData[2].picture}></img>
                 <div className="project-info-3">
                 <h2 className="title-project-3">{projectsData[2].name}</h2>
                 <h3 className="description-project-3">descripton</h3>

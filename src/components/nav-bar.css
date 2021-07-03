@@ -31,8 +31,6 @@
     font-size: 170%;
     color: white;
     align-self: center;
-    
-    transition: .1s; 
 }
 
 .nav-link:nth-child(1) {
@@ -54,7 +52,7 @@
 .nav-link:hover {
     border-bottom: 2px solid white;
     color: white;
-    font-size: 175%;
-    font-weight: bold;
+    font-size: 172%;
+    font-weight:500;
 }
 
