@@ -9,8 +9,8 @@ const projectsData = [
     {
         id:2,
         picture:"Water-my-plants.png",
-        name:"project two",
-        description:"im second"
+        name:"Water My Plants",
+        description:"water my plants is"
     },
     {
         id:3,

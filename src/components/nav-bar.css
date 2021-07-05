@@ -19,6 +19,7 @@
 .nav-bar {
     display: flex;
     justify-content: space-evenly;
+    position: relative;
     width: 40%;
     padding: 0%;
     margin-left: 60%;
@@ -34,20 +35,20 @@
 }
 
 .nav-link:nth-child(1) {
-    right: 30%;
+    left: 10%;
 }
 
 .nav-link:nth-child(2) {
-    right: 25%;
+    left: 35%;
 }
 
 .nav-link:nth-child(3) {
-    right: 19%;
+    right: 13%;
 }
 
-.nav-link:nth-child(4) {
+/* .nav-link:nth-child(4) {
     right: 11%;
-}
+} */
 
 .nav-link:hover {
     border-bottom: 2px solid white;

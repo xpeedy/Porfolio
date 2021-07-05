@@ -1,8 +1,5 @@
 import React from "react";
-import ProjectsCards from "./projectsCards";
 import "./home.css";
-// import Styled from "styled-components";
-// import {DownOutlined} from "@ant-design/icons"
 
 
 
@@ -25,13 +22,14 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <a href="#som-home"
+            <div className="som">
+                <p>some other content</p>
+            </div>
+            {/* <a href="#som-home"
              className="btn-home">
                  <span className="visible">click here</span>
                  <span className="hidden">take a look</span>
-            </a>
-            <h2 id="som-home" className="som">Some Of My Work</h2>
-            <ProjectsCards />
+            </a> */}
         </div>
         
     )
