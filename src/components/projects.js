@@ -8,7 +8,7 @@ const Projects = () => {
 
     return(
         <>
-        <h1>My Work</h1>
+        <h1 className="myWork">My Work</h1>
         <div className="projects-container">
             <ProjectsCards />
             {/* {projectsData.map(project => (

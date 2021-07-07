@@ -58,13 +58,13 @@
     flex-direction: row-reverse;
     padding: .5%;
     width: 81%;
-    height: 750px;
-    margin: 0 0 4% 8%;
+    height: 740px;
+    margin: 0 0 6% 8%;
     box-shadow: 0 0.50em 0.7em 0 rgba(0, 0, 0, 0.726);
 }
 
 .project-img-1 {
-    width: 75%;
+    width: 70%;
 }
 
 .project-info-1 {
@@ -99,8 +99,8 @@
     display: flex;
     flex-wrap: nowrap;
     width: 81%;
-    height: 750px;
-    margin: 0 0 4% 8%;
+    height: 740px;
+    margin: 0 0 6% 8%;
     padding: .5%;
     
 }

@@ -15,7 +15,7 @@ const Home = () => {
                         <p>Linkedin</p>
                     </a>
                     <a className="Github" href="">
-                        <p>github</p>
+                        <p>Github</p>
                     </a>
                     <a className="resume" href="">
                         <p>Resume</p>
