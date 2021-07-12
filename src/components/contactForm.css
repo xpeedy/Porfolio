@@ -1,0 +1,68 @@
+
+.contact-form {
+    padding-bottom: 10%;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: nowrap; */
+    flex-direction: row;
+    width: 55%;
+    margin: 8% 0 0 22.5%;
+}
+
+.name-label {
+    width: 47%;
+}
+
+.name-input {
+    padding:10px;
+    border: 0;
+    box-shadow:0 0 15px 5px rgba(0,0,0,0.13);
+    margin:10px 0px;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+.email-label {
+    width: 47%;
+}
+
+.email-input {
+    padding:10px;
+    border: 0;
+    box-shadow:0 0 15px 5px rgba(0,0,0,0.13);
+    margin:10px 0px;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+.message-input {
+    border:0;
+    box-shadow:0 0 15px 5px rgba(0,0,0,0.13);
+    margin:10px 0px;
+    width: 50%;
+    height: 200px;
+    font-size: 1rem;
+    overflow: auto;
+    /* row-gap: 3;
+    columns: 25; */
+    /* word-wrap: break-word; */
+}
+
+.name-h3, .email-h3, .message-h3 {
+    font-size: 1rem;
+    color: white;
+    /* margin-top: 9%;
+    width: 50%;
+    border: solid red; */
+    
+}
+
+.get-in-touch {
+    color: white;
+    font-size: 3rem;
+    margin: 5% 0 -5% -36%;
+}
+

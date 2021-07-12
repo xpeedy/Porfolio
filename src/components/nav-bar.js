@@ -1,55 +1,63 @@
+import React,{ useState } from "react";
 import { Link } from "react-router-dom";
-import Styled from "styled-components";
+import "./nav-bar.css";
 
+const navLinks = [
+{
+    id:0,
+    name: "Home",
+    link: "/" 
+},
+{
+    id:1,
+    name: "Projects",
+    link: "/projects"
+},
+{
+    id:3,
+    name: "Contact",
+    link: "/contact"
+}
+]
 
 const NavBar = () => {
-    
+    const [links, setLinks] = useState(navLinks)
+    const [active, setActive] = useState(null)
+
+    const getClassName = id => {
+        return id === active ? ' active':""
+      };
+
+    const markActive = id => {
+        active === id ? setActive(null) : setActive(id)
+        console.log(active)
+    }
+
     return(
-        <Sdiv>
-            <div className="nav-container">
+        <div className="nav-container">
+            <div className="nav-wrapper">
             <img className="profile-pic" src="./mypic.jpg" alt="profile"/>
-            <Nav className="nav-bar">
+            <div className="nav-bar">
+            {links.map(navItem => (
+                <Link
+                id={navItem.id}
+                key={navItem.id} 
+                className={`nav-link ${getClassName(navItem.id)}`}
+                to={navItem.link}
+                onClick={(e) => markActive(e.target.id)}
+                >{navItem.name}</Link>
+            ))}
+            </div>
+            {/* <div className="nav-bar">
                 <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/projects">Projects</Link>
                 <Link className="nav-link" to="/contact">Contact Me</Link>
-            </Nav>
+            </div> */}
             </div>
-        </Sdiv>
+        </div>
     )
 }
 
 export default NavBar;
 
-const Sdiv = Styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    //border: solid white;
-    .nav-container {
-        display: flex;
-        width: 83%;
-        //border:solid red;
-        margin-top: 1%;
-    }
-    .profile-pic {
-        border-radius:50%;
-        width: 4%;
-    }
-`
-const Nav = Styled.nav`
-    display: flex;
-    justify-content: space-evenly;
-    width: 40%;
-    padding: 0%;
-    margin-left: 60%;
-    //border: solid white;
-    .nav-link {
-        display: flex;
-        text-decoration: none;
-        font-size: 170%;
-        color: white;
-        //border: solid red;
-        align-self: center;
-    }
-`;
 

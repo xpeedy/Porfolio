@@ -1,8 +1,5 @@
 import React from "react";
-import ProjectsCards from "./projectsCards";
 import "./home.css";
-// import Styled from "styled-components";
-// import {DownOutlined} from "@ant-design/icons"
 
 
 
@@ -11,18 +8,28 @@ const Home = () => {
     return(
         <div className="home">
             <div className="top">
-            <h1 className="name">Hello I'm Hairo</h1>
+                <h1 className="name">Hairo Garcia </h1>
+                <h3 className="role">Full Stack Web Developer</h3>
                 <div className="links">
-                    <h3>Linkedin</h3>
-                    <h3>Github</h3>
-                    <h3>something here</h3>
+                    <a className="linkedin" href="">
+                        <p>Linkedin</p>
+                    </a>
+                    <a className="Github" href="">
+                        <p>Github</p>
+                    </a>
+                    <a className="resume" href="">
+                        <p>Resume</p>
+                    </a>
                 </div>
             </div>
-            <a href="#som-home"
-             className="btn-home">Take a look
-            </a>
-            <h2 id="som-home" className="som">Some Of My Work</h2>
-            <ProjectsCards />
+            <div className="som">
+                <p>some other content</p>
+            </div>
+            {/* <a href="#som-home"
+             className="btn-home">
+                 <span className="visible">click here</span>
+                 <span className="hidden">take a look</span>
+            </a> */}
         </div>
         
     )

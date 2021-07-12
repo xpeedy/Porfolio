@@ -3,6 +3,10 @@
   background-color: rgb(32, 31, 44);
 }
 
+h1,h2,h3 {
+  color: white;
+}
+
 body {
   overflow-x: hidden;
 }
