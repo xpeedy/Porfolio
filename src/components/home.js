@@ -1,5 +1,5 @@
 import React from "react";
-import CarouselComp from "./carousel";
+import Carousel from "./carousel";
 import "./home.css";
 
 
@@ -12,24 +12,21 @@ const Home = () => {
                 <h1 className="name">Hairo Garcia </h1>
                 <h3 className="role">Full Stack Web Developer</h3>
                 <div className="links">
-                    <a className="linkedin" href="">
+                    <a className="linkedin" href="https://www.linkedin.com/in/hairo-garcia/" target="_blank">
                         <p>Linkedin</p>
                     </a>
-                    <a className="Github" href="">
+                    <a className="Github" href="https://github.com/xpeedy" target="_blank">
                         <p>Github</p>
                     </a>
-                    <a className="resume" href="">
+                    <a className="resume" href="https://docs.google.com/document/d/1Jd8poScfz6GJB8Wv6MWA1H0Qkdz48QpHzM4zNvtTpnA/edit?usp=sharing" target="_blank">
                         <p>Resume</p>
                     </a>
                 </div>
             </div>
             <div className="som">
-                <p>some other content</p>
+                <p>my skills</p>
             </div>
-            <div className="carousel">
-                
-            </div>
-            <CarouselComp />
+            <Carousel />
             {/* <a href="#som-home"
              className="btn-home">
                  <span className="visible">click here</span>

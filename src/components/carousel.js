@@ -1,35 +1,48 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Carousel } from 'antd';
+import React, { useState } from 'react';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import "./carousel.css"
 
-const contentStyle = {
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
+const skills = [
+  {
+    name: "JavaScript"
+  },
+  {
+    name: "React"
+  },
+  {
+    name: "Node.js"
+  },
+  
+]
+const Carousel = () => {
 
-const CarouselComp = () => {
+  const [current, setCurrent] = useState(0);
+  const length = skills.length;
 
-    return(
-    <Carousel autoplay>
-        <div>
-        <h3 style={contentStyle}>1</h3>
+  const goNext = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1)
+  }
+
+  const goPrev = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1)
+  }
+  console.log(current)
+
+  if(!Array.isArray(skills) || skills.length <= 0) {
+    return null
+  }
+
+  return(
+    <div className="slider">
+      <LeftOutlined className="left-arrow" onClick={goPrev} style={{"color":"white"}}/>
+      <RightOutlined className="right-arrow" onClick={goNext} style={{"color":"white"}}/>
+      {skills.map((skill, index) => (
+        <div className={index === current ? "slide active" : "slide"} key={index}>
+          {index === current && (<h2 className="skill">{skill.name}</h2>)}
         </div>
-        <div>
-        <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-        <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-        <h3 style={contentStyle}>4</h3>
-        </div>
-    </Carousel>
-    //mountNode,
-    )
+      ))}
+    </div>
+  )
 }
 
-export default CarouselComp;
-ReactDOM.render(<CarouselComp />, document.getElementById("carousel"));
+export default Carousel;
