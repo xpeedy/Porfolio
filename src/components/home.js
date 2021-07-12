@@ -1,4 +1,5 @@
 import React from "react";
+import CarouselComp from "./carousel";
 import "./home.css";
 
 
@@ -25,6 +26,10 @@ const Home = () => {
             <div className="som">
                 <p>some other content</p>
             </div>
+            <div className="carousel">
+                
+            </div>
+            <CarouselComp />
             {/* <a href="#som-home"
              className="btn-home">
                  <span className="visible">click here</span>
