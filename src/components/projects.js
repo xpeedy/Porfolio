@@ -1,10 +1,9 @@
 import React from "react";
 import "./projects.css"
-import Cards from "./Card";
-import projectsData from "../assets/projectsData";
 import ProjectsCards from "./projectsCards";
 
 const Projects = () => {
+
 
     return(
         <>
