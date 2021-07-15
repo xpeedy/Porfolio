@@ -23,10 +23,19 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <div className="som">
-                <p>my skills</p>
+            <div className="mid">
+                <div className="about-me-conatiner">
+                    <h2>About me</h2>
+                    <p>I'm a passionate developer that is always looking to learn something new.
+                        I finish the Full Stack Web Developer promgram at Lambda School. Check them
+                        out <a href="" alt="" >here!</a>
+                    </p>
+                </div>
+                <div className="carousel-container">
+                    <h2>Skills</h2>
+                    <Carousel />
+                </div>
             </div>
-            <Carousel />
             {/* <a href="#som-home"
              className="btn-home">
                  <span className="visible">click here</span>
