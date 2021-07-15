@@ -40,11 +40,11 @@
 }
 
 .nav-link:nth-child(2) {
-    left: 36%;
+    left: 41%;
 }
 
 .nav-link:nth-child(3) {
-    right: 13%;
+    right: 10%;
 }
 
 .nav-link:hover {
@@ -54,7 +54,7 @@
     font-weight:500;
 }
 
-.active {
+.nav-link.active {
     color: red;
     border: solid red;
 }

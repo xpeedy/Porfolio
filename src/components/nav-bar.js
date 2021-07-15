@@ -25,12 +25,11 @@ const NavBar = () => {
     const [active, setActive] = useState(null)
 
     const getClassName = id => {
-        return id === active ? ' active':""
+        return id === active ? 'nav-link active':""
       };
 
     const markActive = id => {
         active === id ? setActive(null) : setActive(id)
-        console.log(active)
     }
 
     return(
