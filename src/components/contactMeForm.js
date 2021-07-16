@@ -11,8 +11,10 @@ const ContactForm = () => {
         console.log(values)
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
 
+        console.log("send")
     }
 
     return(

@@ -15,6 +15,7 @@ const ProjectsCards = () => {
                 <div  className="project-info-1">
                 <h2 className="title-project-1">{projectsData[0].name}</h2>
                 <p className="paragraph-project-1">{projectsData[0].description}</p>
+                <a href="#">Github</a>|<a href="#">Demo</a>
                 </div>
             </div>
             <div className="project-2">
