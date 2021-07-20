@@ -65,33 +65,32 @@
 }
 
 .project-img-1 {
-    width: 70%;
+    width: 75%;
 }
 
 .project-info-1 {
     display: flex;
     flex-direction: column;
     /* border: solid blue; */
-    width: 25%;
-    padding: 3%;
+    width: 35%;
+    padding: 4%;
 }
 
 .title-project-1 {
     color: white;
     margin-top: 2%;
-    font-size: 2rem;
-    width: 40%;
+    font-size: 2.5rem;
+    width: 100%;
     /* border: solid red; */
     
 }
 
-.description-project-1 {
-    width: 40%;
-}
-
 .paragraph-project-1 {
+    /* border:solid red; */
     color: white;
-    width: 60%;
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
 }
 
 /* project two styles */
@@ -114,9 +113,8 @@
 .project-info-2 {
     display: flex;
     flex-direction: column;
-    /* border: solid blue; */
-    width: 25%;
-    padding: 3%;
+    width: 35%;
+    padding: 4%;
     /* margin-right: -30%;     */
     /* animation-duration: 2.5s;
     animation-name: slide-in-right; */
@@ -125,20 +123,15 @@
 .title-project-2 {
     color: white;
     margin-top: 2%;
-    font-size: 2rem;
-    width: 40%;
-    /* border: solid red;    */
-}
-
-.description-project-2 {
-    /* border: solid red; */
-    width: 40%;
+    font-size: 2.5rem;
+    width: 100%;
 }
 
 .paragraph-project-2 {
-    /* border: solid red; */
     color: white;
-    width: 60%;
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
 }
 
 
@@ -173,9 +166,8 @@
 .title-project-3 {
     color: white;
     margin-top: 2%;
-    font-size: 2rem;
-    width: 40%;
-    /* border: solid red;    */
+    font-size: 2.5rem;
+    width: 100%;
 }
 
 .description-project-3 {
