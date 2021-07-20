@@ -1,5 +1,3 @@
-@import '~antd/dist/antd.css';
-
 /* animations */
 @keyframes slide-in-bottom {
     0% {
@@ -39,7 +37,7 @@
       opacity: 1;
     }
 }
-
+/* <-------------------------------------------> */
 
 
 .projects-container-home {
@@ -59,7 +57,7 @@
     flex-direction: row-reverse;
     padding: .5%;
     width: 81%;
-    height: 680px;
+    height: auto;
     margin: 0 0 6% 8%;
     box-shadow: 0 0.50em 0.7em 0 rgba(0, 0, 0, 0.726);
 }
