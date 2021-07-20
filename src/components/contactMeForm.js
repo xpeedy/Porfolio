@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./contactForm.css"
+import emailjs from "emailjs-com";
+import "./contactForm.css";
 
 
 const ContactForm = () => {
@@ -11,14 +12,26 @@ const ContactForm = () => {
         console.log(values)
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
 
-        console.log("send")
-    }
+    //     console.log("send")
+    // }
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_f4ahkcu', 'template_0o4u4xb', e.target, 'user_Q8V2jLf2cXpclDzP5jPEC')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          setValues({name:"",email:"",message:""})
+      }
 
     return(
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form onSubmit={sendEmail} className="contact-form">
             <h2 className="get-in-touch">Get in touch</h2>
             <div className="info-container">
             <label className="name-label">
