@@ -5,20 +5,14 @@ import "./contactForm.css";
 
 const ContactForm = () => {
 
-    const [values, setValues] = useState({name:"",email:"",message:""})
+    const [values, setValues] = useState({name:"",email:"",message:""});
+    const [sent, setSent] = useState(false)
 
     const handleChanges = (e) => {
         setValues({...values,[e.target.name]: e.target.value})
-        console.log(values)
-    }
+    };
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault()
-
-    //     console.log("send")
-    // }
-
-    function sendEmail(e) {
+    const sendEmail = (e) => {
         e.preventDefault();
     
         emailjs.sendForm('service_f4ahkcu', 'template_0o4u4xb', e.target, 'user_Q8V2jLf2cXpclDzP5jPEC')
@@ -28,7 +22,8 @@ const ContactForm = () => {
               console.log(error.text);
           });
           setValues({name:"",email:"",message:""})
-      }
+          setSent(true)
+    }
 
     return(
         <form onSubmit={sendEmail} className="contact-form">
@@ -64,7 +59,14 @@ const ContactForm = () => {
                 />
             </label>
             <br />
-            <button>Send</button>
+            {sent ? <div className="popUp">
+                <div className="popUp-content">
+                <h3 className="message-response">message sent!<br/>
+                Thank you! I will contact you as soon as possible.</h3>
+                <p className="close-button" onClick={() => {setSent(false)}}>x</p>
+                </div>
+            </div> : ""}
+            <button className="send-button">Send</button>
         </form>
     )
 }
