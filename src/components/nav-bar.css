@@ -38,10 +38,16 @@
 .nav-link:nth-child(1) {
     left: 10%;
 }
+/* .nav-link.active:nth-child(1) {
+    border: solid red;
+} */
 
 .nav-link:nth-child(2) {
-    left: 41%;
+    left: 37%;
 }
+/* .nav-link.active:nth-child(2) {
+    border: solid red;
+} */
 
 .nav-link:nth-child(3) {
     right: 10%;
@@ -50,11 +56,14 @@
 .nav-link:hover {
     border-bottom: 2px solid white;
     color: white;
-    font-size: 172%;
-    font-weight:500;
 }
 
 .nav-link.active {
-    color: red;
-    border: solid red;
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    font-size: 170%;
+    color: white;
+    align-self: center;
+    border-bottom: 2px solid white;
 }
