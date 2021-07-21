@@ -83,6 +83,9 @@
     text-shadow: 4px 4px 3px black;
 }
 
+.linkedin {
+  text-decoration: none;
+}
 .linkedin p {
     animation: slide-in-right 2s both;
     width: 35%;
@@ -91,6 +94,9 @@
     text-align: center;
 }
 
+.Github {
+  text-decoration: none;
+}
 .Github p {
     animation: slide-in-right 2.5s both;
     width: 35%;
@@ -99,6 +105,9 @@
     text-align: center;
 }
 
+.resume {
+  text-decoration: none;
+}
 .resume p {
     animation: slide-in-right 3s both;
     width: 35%;
