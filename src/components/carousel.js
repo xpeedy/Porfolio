@@ -37,7 +37,7 @@ const Carousel = () => {
       <RightOutlined className="right-arrow" onClick={goNext} style={{"color":"white"}}/>
       {skills.map((skill, index) => (
         <div className={index === current ? "slide active" : "slide"} key={index}>
-          {index === current && (<h2 className="skill">{skill.name}</h2>)}
+          {index === current && (<p className="skill">{skill.name}</p>)}
         </div>
       ))}
     </div>

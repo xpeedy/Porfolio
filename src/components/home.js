@@ -24,7 +24,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="mid">
-                <div className="about-me-conatiner">
+                <div className="about-me-container">
                     <h2>About me</h2>
                     <p>I'm a passionate developer that is always looking to learn something new.
                         I finish the Full Stack Web Developer promgram at Lambda School. Check them

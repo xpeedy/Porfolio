@@ -67,3 +67,18 @@
     align-self: center;
     border-bottom: 2px solid white;
 }
+
+@media(max-width: 360px) {
+    .nav-wrapper {
+        border: solid blue;
+    }
+
+    .profile-pic {
+        width: 20%;
+        /* display: none; */
+    }
+
+    .nav-bar {
+        display: none;
+    }
+}
