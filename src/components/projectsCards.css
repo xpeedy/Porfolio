@@ -51,22 +51,22 @@
 
 
 /* project one styles */
-.project-1 {
+.project {
     background-color: rgb(43, 41, 54);
     display: flex;
     flex-direction: row-reverse;
     padding: .5%;
-    width: 81%;
-    height: auto;
-    margin: 0 0 6% 8%;
+    width: 75%;
+    height: 60vh;
+    margin: 0 0 6% 12%;
     box-shadow: 0 0.50em 0.7em 0 rgba(0, 0, 0, 0.726);
 }
 
-.project-img-1 {
+.project-img {
     width: 75%;
 }
 
-.project-info-1 {
+.project-info {
     display: flex;
     flex-direction: column;
     /* border: solid blue; */
@@ -74,7 +74,7 @@
     padding: 4%;
 }
 
-.title-project-1 {
+.project-title {
     color: white;
     margin-top: 2%;
     font-size: 2.5rem;
@@ -83,7 +83,7 @@
     
 }
 
-.paragraph-project-1 {
+.description {
     /* border:solid red; */
     color: white;
     width: 100%;
@@ -91,92 +91,36 @@
     text-align: center;
 }
 
-/* project two styles */
-.project-2 {
-    background-color: rgb(43, 41, 54);
-    box-shadow: 0 0.50em 0.7em 0 rgba(0, 0, 0, 0.726);
-    display: flex;
-    flex-wrap: nowrap;
-    width: 81%;
-    height: 700px;
-    margin: 0 0 6% 8%;
-    padding: .5%;
-    
+
+/* media queries */
+@media (max-width: 360px) {
+    .project {
+        flex-direction: column;
+        padding: 2%;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        margin: 7% 6%;
+    }
+
+    .project-img {
+        width:100%;
+        height: 30vh;
+    }
+
+    .project-info {
+        width:auto;
+        height: auto;
+    }
+
+    .project-info h2{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .project-info p{
+        font-size: .7rem;
+        width: 100%;
+    }
+
 }
-
-.project-img-2 {
-    width: 75%;
-}
-
-.project-info-2 {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    padding: 4%;
-    /* margin-right: -30%;     */
-    /* animation-duration: 2.5s;
-    animation-name: slide-in-right; */
-}
-
-.title-project-2 {
-    color: white;
-    margin-top: 2%;
-    font-size: 2.5rem;
-    width: 100%;
-}
-
-.paragraph-project-2 {
-    color: white;
-    width: 100%;
-    margin-top: 10%;
-    text-align: center;
-}
-
-
-/* project three styles */
-.project-3 {
-    background-color: rgb(43, 41, 54);
-    /* border: solid blue; */
-    display: flex;
-    flex-direction: row-reverse;
-    padding: .5%;
-    width: 81%;
-    height: 700px;
-    margin: 0 0 4% 8%;
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-    
-}
-
-.project-img-3 {
-    width: 75%;
-}
-
-.project-info-3 {
-    display: flex;
-    flex-direction: column;
-    /* border: solid blue; */
-    width: 25%;
-    padding: 3%;
-    /* animation-name: slide-in-left;
-    animation-duration: 2.5s; */
-}
-
-.title-project-3 {
-    color: white;
-    margin-top: 2%;
-    font-size: 2.5rem;
-    width: 100%;
-}
-
-.description-project-3 {
-    /* border: solid red; */
-    width: 40%;
-}
-
-.paragraph-project-3 {
-    /* border: solid red; */
-    color: white;
-    width: 60%;
-    /* margin: -3.5% 0 5% 40%; */
-}
-

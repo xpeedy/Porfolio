@@ -106,3 +106,50 @@
     margin-top: 1%;
     cursor: pointer;
 }
+
+/* media queries */
+@media (max-width: 360px){
+
+    .get-in-touch {
+        font-size: 2.5rem;
+        margin: 4% 0;
+    }
+
+    .info-container {
+        flex-direction: column;
+        width: auto;
+        margin: 0 5%;
+    }
+
+    .name-label, .email-label {
+        width: auto;
+    }
+
+    .message-input {
+        width: 80%;
+        height: 20vh;
+    }
+
+    .send-button {
+        width: 30%;
+    }
+
+    .popUp-content {
+        width: 40%;
+        height: 5vh;
+        border: solid blue;
+    }
+
+    .message-response {
+        /* border: solid red; */
+        padding: auto;
+        width: 150%;
+        margin: -29% 0 0 -25%;
+    }
+    
+    .close-button {
+        top: -8%;
+        height: 5vh;
+        width: 7%;
+    }
+}
