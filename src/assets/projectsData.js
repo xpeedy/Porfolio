@@ -4,7 +4,9 @@ const projectsData = [
         id:1,
         picture:"Blue-Witness.png",
         name:"Blue Witness",
-        description:"Project sponsored by Humans Rights First (http://humanrightsfirst.org) that visualizes user reported data around police use of force in the United States."
+        description:"Project sponsored by Humans Rights First (http://humanrightsfirst.org) that visualizes user reported data around police use of force in the United States.",
+        github:"",
+        demo:""
     },
     {
         id:2,
@@ -21,7 +23,7 @@ const projectsData = [
     {
         id:4,
         picture:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-        name:"project four",
+        name:"",
         description:"im fourth",
     }
 ]
