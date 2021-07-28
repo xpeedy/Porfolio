@@ -124,7 +124,7 @@
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 480px) {
     .project {
         flex-direction: column;
         padding: 2%;
@@ -151,6 +151,37 @@
 
     .project-info p{
         font-size: .7rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        padding: 2%;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        margin: 7% 8%;
+    }
+
+    .project-img {
+        width:100%;
+        height: 40vh;
+    }
+
+    .project-info {
+        width:auto;
+        height: auto;
+    }
+
+    .project-info h2{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .project-info p{
+        font-size: 1.5rem;
         width: 100%;
     }
 }

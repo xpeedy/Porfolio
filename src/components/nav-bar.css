@@ -48,16 +48,10 @@
 .nav-link:nth-child(1) {
     left: 10%;
 }
-/* .nav-link.active:nth-child(1) {
-    border: solid red;
-} */
 
 .nav-link:nth-child(2) {
     left: 37%;
 }
-/* .nav-link.active:nth-child(2) {
-    border: solid red;
-} */
 
 .nav-link:nth-child(3) {
     right: 10%;
@@ -85,12 +79,10 @@
 @media(max-width: 360px) {
     .nav-wrapper {
         margin: 6% 0;
-        /* border: solid blue; */
     }
 
     .profile-pic {
         width: 20%;
-        /* display: none; */
     }
 
     .nav-bar {
@@ -98,7 +90,6 @@
     }
 
     .burger-menu-icon {
-        /* border: solid red; */
         display: inherit;
         margin-left: auto;
         height: fit-content;
@@ -143,14 +134,12 @@
     }
 }
 
-@media (max-width:414px) {
+@media (max-width:480px) {
     .nav-wrapper {
         margin: 6% 0;
-        /* border: solid blue; */
     }
     .profile-pic {
         width: 18%;
-        /* display: none; */
     }
 
     .nav-bar {
@@ -158,7 +147,6 @@
     }
 
     .burger-menu-icon {
-        /* border: solid red; */
         display: inherit;
         margin-left: auto;
         height: fit-content;
@@ -200,4 +188,61 @@
         text-decoration: none;
         color: white;
     }
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        margin: 6% 0;
+    }
+    .profile-pic {
+        width: 15%;
+        height: 10vh;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .burger-menu-icon {
+        display: inherit;
+        margin-left: auto;
+        height: fit-content;
+        width: fit-content;
+        font-size: 3.5rem;
+    }
+
+    .burger-menu {
+        position:fixed;
+        z-index: 2;
+        left: 0%;
+        height: 100vh;
+        width: 100%;
+        margin-top: -6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: end;
+        font-size: 2.5rem;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .burger-content {
+        position: relative;
+        left: 50%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: end;
+        font-size: 2.5rem;
+        height: 100vh;
+        width: 50%;
+        background-color: rgb(43, 41, 54);
+        animation: slide-in-left .7s both;
+    }
+
+    .burger-link {
+        margin-right: 5%;
+        text-decoration: none;
+        color: white;
+    }   
 }
