@@ -22,3 +22,9 @@
         font-size: .8rem;
     }
 }
+
+@media (max-width:414px) {
+    .footer-container {
+        width: auto;
+    }
+}
