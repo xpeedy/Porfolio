@@ -23,7 +23,13 @@
     }
 }
 
-@media (max-width:414px) {
+@media (max-width:480px) {
+    .footer-container {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
     .footer-container {
         width: auto;
     }
