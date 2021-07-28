@@ -246,3 +246,24 @@
         color: white;
     }   
 }
+
+@media (max-width:1024px) {
+    .nav-wrapper {
+        margin: 6% 0;
+    }
+    .profile-pic {
+        width: 10%;
+        height: 10vh;
+    }
+    .nav-link:nth-child(1) {
+        left: -96%;
+    }
+    
+    .nav-link:nth-child(2) {
+        left: -35%;
+    }
+    
+    .nav-link:nth-child(3) {
+        right: 12%;
+    }
+}

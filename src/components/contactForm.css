@@ -108,6 +108,16 @@
 }
 
 /* media queries */
+
+@media (max-width: 1024px) {
+    .get-in-touch {
+        font-size: 4rem;
+        margin: 4% 0;
+    }
+    .send-button {
+        width: 10%;
+    }
+}
 @media (max-width: 360px){
 
     .get-in-touch {
