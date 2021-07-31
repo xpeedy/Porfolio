@@ -226,6 +226,45 @@ h3 {
 */
 
 /* media queries */
+/* @media (max-width:1366px) {} */
+
+@media (max-width:1280px){
+  .name {
+    width: fit-content;
+    height: auto;
+    font-size: 9.5rem;
+  }
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 73%;
+    height: 5%;
+    margin: 0 0 0 8%;
+  }
+  .about-me-container h2{
+    font-size: 3rem;
+  }
+  .about-me-container{
+    width: auto;
+    padding: 2% 7%;
+    margin: 7% 0;
+  }  
+
+  .carousel-container {
+    width: 100%;
+    height: 30vh;
+    padding-top: 5%;
+  }
+
+  .carousel-container h2{
+    font-size: 3rem;
+    margin-bottom: -10%;
+
+  }
+
+}
+
 
 @media (max-width:1024px) {
   .name {
@@ -263,41 +302,31 @@ h3 {
   }
 }
 
-@media(max-width: 360px) {
-  .top {
-    /* border: solid blue; */
-  }
-
+@media (max-width: 768px) {
   .name {
-    font-size: 3.5rem;
-    height: auto;
+    font-size: 7rem;
     width: auto;
-    /* border: solid red; */
-    margin: auto;
+    height: auto;
+    margin-right: 5%;
   }
 
   .role {
-    font-size: 1.5rem;
-    /* border: solid red; */
-    height: auto;
+    font-size: 2rem;
     width: auto;
-    margin: auto;
+    height: auto;
   }
 
   .links {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* border: solid red; */
     width: 73%;
-    height: 60%;
-    margin: auto;
-    /* margin-left: 10%; */
-
+    height: 50%;
+    margin-left: 10%;
   }
-  
-  .links p {
-    font-size: 15px;
+
+  .links p{
+    font-size: 1.5rem;
     width: 100%;
     margin: auto;
   }
@@ -312,18 +341,20 @@ h3 {
     margin: 7% 0;
   }  
 
-  .about-me-container p,h2{
-    font-size: 1rem;
+  .about-me-container h2{
+    font-size: 2rem;
   }
 
   .carousel-container {
     width: auto;
+    height: 25vh;
     padding-top: 5%;
   }
 
   .carousel-container h2{
-    font-size: 1.7rem;
-    margin-bottom: -9% ;
+    font-size: 2rem;
+    margin-bottom: -15%;
+
   }
 }
 
@@ -386,31 +417,41 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+
+@media(max-width: 360px) {
+  .top {
+    /* border: solid blue; */
+  }
+
   .name {
-    font-size: 7rem;
-    width: auto;
+    font-size: 3.3rem;
     height: auto;
-    margin-right: 5%;
+    width: auto;
+    margin: auto;
   }
 
   .role {
-    font-size: 2rem;
-    width: auto;
+    font-size: 1.5rem;
+    /* border: solid red; */
     height: auto;
+    width: auto;
+    margin: auto;
   }
 
   .links {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* border: solid red; */
     width: 73%;
-    height: 50%;
-    margin-left: 10%;
-  }
+    height: 60%;
+    margin: auto;
+    /* margin-left: 10%; */
 
-  .links p{
-    font-size: 1.5rem;
+  }
+  
+  .links p {
+    font-size: 15px;
     width: 100%;
     margin: auto;
   }
@@ -425,19 +466,17 @@ h3 {
     margin: 7% 0;
   }  
 
-  .about-me-container h2{
-    font-size: 2rem;
+  .about-me-container p,h2{
+    font-size: 1rem;
   }
 
   .carousel-container {
     width: auto;
-    height: 25vh;
     padding-top: 5%;
   }
 
   .carousel-container h2{
-    font-size: 2rem;
-    margin-bottom: -15%;
-
+    font-size: 1.7rem;
+    margin-bottom: -9% ;
   }
 }

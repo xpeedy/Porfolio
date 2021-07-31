@@ -4,9 +4,9 @@ const projectsData = [
         id:1,
         picture:"Blue-Witness.png",
         name:"Blue Witness",
-        description:"Project sponsored by Humans Rights First (http://humanrightsfirst.org) that visualizes user reported data around police use of force in the United States.",
+        description:"Project sponsored by Humans Rights First that visualizes user reported data around police use of force in the United States.",
         github:"",
-        demo:""
+        demo:" http://humanrightsfirst.org"
     },
     {
         id:2,
@@ -17,7 +17,7 @@ const projectsData = [
     {
         id:3,
         picture:"https://i.stack.imgur.com/y9DpT.jpg",
-        name:"comming soon",
+        name:"",
         description:"",
     },
     {

@@ -76,13 +76,171 @@
     display: none;
 }
 
+/* media query */
+@media (max-width:1280px) {
+    .nav-wrapper {
+        margin: 6% 0;
+    }
+    .profile-pic {
+        width: 9%;
+        height: 10vh;
+    }
+    .nav-link:nth-child(1) {
+        left: -96%;
+    }
+    
+    .nav-link:nth-child(2) {
+        left: -29%;
+    }
+    
+    .nav-link:nth-child(3) {
+        right: 12%;
+    }
+}
+
+@media (max-width:1024px) {
+    .nav-wrapper {
+        margin: 6% 0;
+    }
+    .profile-pic {
+        width: 10%;
+        height: 10vh;
+    }
+    .nav-link:nth-child(1) {
+        left: -96%;
+    }
+    
+    .nav-link:nth-child(2) {
+        left: -35%;
+    }
+    
+    .nav-link:nth-child(3) {
+        right: 12%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        margin: 6% 0;
+    }
+    .profile-pic {
+        width: 12%;
+        height: 8vh;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .burger-menu-icon {
+        display: inherit;
+        margin-left: auto;
+        height: fit-content;
+        width: fit-content;
+        font-size: 3.5rem;
+    }
+
+    .burger-menu {
+        position:fixed;
+        z-index: 2;
+        left: 0%;
+        height: 100vh;
+        width: 100%;
+        margin-top: -6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: end;
+        font-size: 2.5rem;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .burger-content {
+        position: relative;
+        left: 50%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: end;
+        font-size: 2.5rem;
+        height: 100vh;
+        width: 50%;
+        background-color: rgb(43, 41, 54);
+        animation: slide-in-left .7s both;
+    }
+
+    .burger-link {
+        margin-right: 5%;
+        text-decoration: none;
+        color: white;
+    }   
+}
+
+@media (max-width:480px) {
+    .nav-wrapper {
+        margin: 6% 0;
+    }
+    .profile-pic {
+        width: 18%;
+        height: 8vh;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .burger-menu-icon {
+        display: inherit;
+        margin-left: auto;
+        height: fit-content;
+        width: fit-content;
+        font-size: 2.5rem;
+    }
+
+    .burger-menu {
+        position:fixed;
+        z-index: 2;
+        left: 0%;
+        height: 100vh;
+        width: 100%;
+        margin-top: -6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: end;
+        font-size: 2.5rem;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .burger-content {
+        position: relative;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: end;
+        font-size: 2.5rem;
+        height: 100vh;
+        width: 50%;
+        background-color: rgb(43, 41, 54);
+        animation: slide-in-left 1s both;
+    }
+
+    .burger-link {
+        margin-right: 5%;
+        text-decoration: none;
+        color: white;
+    }
+}
+
 @media(max-width: 360px) {
     .nav-wrapper {
         margin: 6% 0;
     }
 
     .profile-pic {
-        width: 20%;
+        width: 21%;
+        height: 7vh
     }
 
     .nav-bar {
@@ -134,136 +292,6 @@
     }
 }
 
-@media (max-width:480px) {
-    .nav-wrapper {
-        margin: 6% 0;
-    }
-    .profile-pic {
-        width: 18%;
-    }
 
-    .nav-bar {
-        display: none;
-    }
 
-    .burger-menu-icon {
-        display: inherit;
-        margin-left: auto;
-        height: fit-content;
-        width: fit-content;
-        font-size: 2.5rem;
-    }
 
-    .burger-menu {
-        position:fixed;
-        z-index: 2;
-        left: 0%;
-        height: 100vh;
-        width: 100%;
-        margin-top: -6%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: end;
-        font-size: 2.5rem;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .burger-content {
-        position: relative;
-        left: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: end;
-        font-size: 2.5rem;
-        height: 100vh;
-        width: 50%;
-        background-color: rgb(43, 41, 54);
-        animation: slide-in-left 1s both;
-    }
-
-    .burger-link {
-        margin-right: 5%;
-        text-decoration: none;
-        color: white;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-wrapper {
-        margin: 6% 0;
-    }
-    .profile-pic {
-        width: 15%;
-        height: 10vh;
-    }
-
-    .nav-bar {
-        display: none;
-    }
-
-    .burger-menu-icon {
-        display: inherit;
-        margin-left: auto;
-        height: fit-content;
-        width: fit-content;
-        font-size: 3.5rem;
-    }
-
-    .burger-menu {
-        position:fixed;
-        z-index: 2;
-        left: 0%;
-        height: 100vh;
-        width: 100%;
-        margin-top: -6%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: end;
-        font-size: 2.5rem;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .burger-content {
-        position: relative;
-        left: 50%;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: end;
-        font-size: 2.5rem;
-        height: 100vh;
-        width: 50%;
-        background-color: rgb(43, 41, 54);
-        animation: slide-in-left .7s both;
-    }
-
-    .burger-link {
-        margin-right: 5%;
-        text-decoration: none;
-        color: white;
-    }   
-}
-
-@media (max-width:1024px) {
-    .nav-wrapper {
-        margin: 6% 0;
-    }
-    .profile-pic {
-        width: 10%;
-        height: 10vh;
-    }
-    .nav-link:nth-child(1) {
-        left: -96%;
-    }
-    
-    .nav-link:nth-child(2) {
-        left: -35%;
-    }
-    
-    .nav-link:nth-child(3) {
-        right: 12%;
-    }
-}
