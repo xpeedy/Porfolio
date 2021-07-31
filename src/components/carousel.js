@@ -10,7 +10,28 @@ const skills = [
     name: "React"
   },
   {
+    name: "Redux"
+  },
+  {
     name: "Node.js"
+  },
+  {
+    name: "Express"
+  },
+  {
+    name: "Knex"
+  },
+  {
+    name: "Postgres"
+  },
+  {
+    name: "Sqlite3"
+  },
+  {
+    name: "HTML"
+  },
+  {
+    name: "CSS"
   },
   
 ]
