@@ -3,8 +3,6 @@ import projectsData from "../assets/projectsData";
 import "./projectsCards.css"
 
 
-
-
 const ProjectsCards = () => {
 
     return(
@@ -16,7 +14,8 @@ const ProjectsCards = () => {
                     <div className="project-info">
                         <h2 className="project-title">{project.name}</h2>
                         <p className="description">{project.description}</p>
-                        <a href={project.github}>Github |</a><a href={project.demo}>Demo</a>
+                        {project.demo? <a href={project.demo}>Demo</a> : ""}
+                        <a href={project.github}>Github |</a>
                     </div> 
                 </div>
             ))}
